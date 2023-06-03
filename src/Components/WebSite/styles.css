@@ -1,0 +1,59 @@
+.dataSection {
+    display: flex;
+}
+  
+.dataContainer {
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+.container-style {
+    height: 368.66px;
+}
+
+.coctail-footer {
+    height: 386.66px;
+    background: linear-gradient(45deg, #7cff02, #3F5EFB);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px;
+    transition: 0.5s;
+}
+
+.coctail-footer:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dataStyles {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px;
+    transition: 0.5s;
+}
+
+.dataStyles:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h4 {
+    font-size: 18px;
+    background: linear-gradient(45deg, #cc02ff, #c8fd07);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 100px;
+    background: linear-gradient(45deg, #e70c3b, #8e07fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h5 {
+    background: linear-gradient(45deg, #fd0000, #fdc407);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
