@@ -1,6 +1,4 @@
-import InputForum from './Components/InputForum';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import WebSite from './Components/WebSite';
 import { otherpaths } from './Components/Others-Paths';
 
 function App() {

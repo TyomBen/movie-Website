@@ -1,15 +1,19 @@
-import { datamovies } from "../DataMovies";
+import { deleteCurrentList } from "../../store/action";
 import './styles.css';
+import { useSelector, useDispatch } from "react-redux";;
 
 const WebSite = () => {
-  return (
+  const dispatch = useDispatch ()
+  const movies = useSelector (state => state.movie.movies)
+  const handleDeleteClick = (imdbID) => {
+    dispatch (deleteCurrentList(imdbID))
+  }
+
+    return movies.length ? (
     <main>
       <section className="dataSection">
-        {datamovies.map(items => {
-          return (
-            <div className="dataContainer">
-              {items.Search.map(movies => {
-                const { Title, Year, imdbID, Type, Poster } = movies;
+        {movies.map(items => {
+     const { Title, Year, imdbID, Type, Poster } = items;
                 return (
                   <article>
                     <div className = "container-style">
@@ -20,16 +24,17 @@ const WebSite = () => {
                         <h4>{Title}</h4>
                         <h4>Year : {Year}</h4>
                         <h5>genre : {Type}</h5>
+                        <button onClick={() => handleDeleteClick(imdbID)}>Delete</button>
                     </div>
                   </article>
                 );
               })}
-            </div>
-          );
-        })}
+    
       </section>
     </main>
-  );
+  ) : (
+    <a href="/list-of-movies">BACK</a>
+  )
 }
 
 export default WebSite;

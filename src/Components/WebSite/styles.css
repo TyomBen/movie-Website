@@ -1,5 +1,8 @@
 .dataSection {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 90px;
 }
   
 .dataContainer {
@@ -7,7 +10,7 @@
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 90px;
+   
 }
 
 .container-style {
@@ -56,4 +59,32 @@ h5 {
     background: linear-gradient(45deg, #fd0000, #fdc407);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    margin-left: 70px;
+    background: linear-gradient(45deg, #cc02ff, #c8fd07);
+    border-radius: 5px;
+    border: none;
+    color: #c8fd07;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+a {
+    color: gold;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #7cff02;
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    border-radius: 5px;
 }

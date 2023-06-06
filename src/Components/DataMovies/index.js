@@ -1,6 +1,5 @@
 export const datamovies = [
-    {
-        "Search": [
+  
           {
             "Title": "Everything Everywhere All at Once",
             "Year": "2022",
@@ -70,9 +69,10 @@ export const datamovies = [
             "imdbID": "tt0116705",
             "Type": "movie",
             "Poster": "https://m.media-amazon.com/images/M/MV5BMmJlYzViNzctMjQ1Ni00ZWQ4LThkN2YtMzI2ZGU5Nzk0NTAyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+          },
+
+          {
+            "totalResults": "8141",
+            "Response": "True"
           }
-        ],
-        "totalResults": "8141",
-        "Response": "True"
-      }
 ]
