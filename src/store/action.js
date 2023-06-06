@@ -7,12 +7,14 @@ export const deleteCurrentList = (payload) => {
 
 export const valuePassword = (payload) => {
     return {
-        type : 'SETPASSWORD'
+        type : 'SETPASSWORD',
+        payload : payload
     }
 }
 
 export const valueLogin = (payload) => {
     return {
-       type  : 'SETLOGIN'
+       type  : 'SETLOGIN',
+       payload : payload
     }
 }
